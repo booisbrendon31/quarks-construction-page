@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #c9961a;
+    padding: 5px 10px;
+    border-bottom: 2px solid rgba(255,255,255,0.15);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+.corner-logo img {
+    object-fit: contain;
+    display: block;
+}
+
+/* Left Logo */
+
+.left-logo img {
+    width: 80px;
+}
+
+/* Namibia Flag */
+
+.right-flag img {
+    width: 95px;
+}
+
+/* HERO */
+
+#hero {
+    position: relative;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url('./Assets/hero/1.jpg') center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+}
+
+.construction-badge {
+    display: inline-block;
+    border: 2px solid #ff7b00;
+    color: #ff7b00;
+    padding: 12px 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.9);
+}
+
+.countdown-box {
+    width: 240px;
+    margin: auto;
+    border: 2px solid #ff7b00;
+    padding: 25px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(2px);
+    /* box-shadow: 0 5px 10px gold; */
+}
+
+.countdown-box span {
+    display: block;
+    font-size: 4rem;
+    color: #ff7b00;
+    font-weight: bold;
+}
+
+.countdown-box small {
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+     #header {
+        padding: 15px 20px;
+    }
+
+    .top-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .left-logo img {
+        width: 55px;
+    }
+
+    .right-flag img {
+        width: 65px;
+    }
+
+    .top-title {
+        font-size: 0.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .countdown-box {
+        width: 180px;
+    }
+
+    .countdown-box span {
+        font-size: 3rem;
+    }
+
+    .left-logo img {
+        width: 45px;
+    }
+
+    .right-flag img {
+        width: 70px;
+    }
+}
